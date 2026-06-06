@@ -60,16 +60,46 @@
 - 文を短くする。
 - 句読点を入れて、読みやすくする。
 
-## 出力物
+## 自動動画生成ツール用の必須出力物
 
-- 画像ZIP。
-- VOICEVOX用SRT。
-- description.txt。
-- fixed_comment.txt。
-- title.txt。
+各ショート動画フォルダには、必ず以下を入れる。
+
+```text
+images.zip
+voicevox.srt
+description.txt
+fixed_comment.txt
+title.txt
+project.json
+```
+
+## project.jsonルール
+
+ショート動画では以下を基本形にする。
+
+```json
+{
+  "video_type": "short",
+  "video_mode": "short_vertical",
+  "title": "動画タイトル",
+  "recommended_publish_at": "YYYY-MM-DD 21:00",
+  "images_zip": "images.zip",
+  "srt": "voicevox.srt",
+  "description": "description.txt",
+  "fixed_comment": "fixed_comment.txt",
+  "status": "ready"
+}
+```
+
+## GitHub保存先
+
+```text
+assets/shorts/YYYY-MM-weekN/01_動画名/
+```
 
 ## テーマ選定ルール
 
 - 毎回、今の流行・伸びやすそうな業界・過去テーマとの重複を確認する。
 - 過去動画と似すぎるテーマは避ける。
 - タイトルでは、AIやChatGPTを前に出しすぎず、具体的な悩みを優先する。
+- 自動生成ツールで使えるように、公開推奨日時も必ず決める。
