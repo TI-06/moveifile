@@ -72,6 +72,7 @@
 8. 固定コメント案。
 9. VOICEVOX用SRTファイル。
 10. 画像一式ZIP。
+11. project.json。
 
 ## 不要なもの
 
@@ -91,9 +92,49 @@
 - 句読点を入れて、読みやすくする。
 - 例：売上 → うりあげ、在庫 → ざいこ、客単価 → きゃくたんか、発注 → はっちゅう、申し送り → もうしおくり。
 
+## 自動動画生成ツール用の必須出力物
+
+各長尺動画フォルダには、必ず以下を入れる。
+
+```text
+images.zip
+voicevox.srt
+description.txt
+fixed_comment.txt
+title.txt
+chapters.txt
+project.json
+```
+
+## project.jsonルール
+
+長尺動画では以下を基本形にする。
+
+```json
+{
+  "video_type": "longform",
+  "video_mode": "long_horizontal",
+  "title": "動画タイトル",
+  "recommended_publish_at": "YYYY-MM-DD 20:00",
+  "images_zip": "images.zip",
+  "srt": "voicevox.srt",
+  "description": "description.txt",
+  "fixed_comment": "fixed_comment.txt",
+  "chapters": "chapters.txt",
+  "status": "ready"
+}
+```
+
+## GitHub保存先
+
+```text
+assets/longform/YYYY-MM-weekN/01_動画名/
+```
+
 ## テーマ選定ルール
 
 - 毎回、今の流行・伸びやすそうな業界・過去テーマとの重複を確認する。
 - 過去動画と似すぎるテーマは避ける。
 - ショートで反応があったテーマを長尺化する。
 - 長尺は検索流入・信頼構築・導線づくりを目的にする。
+- 自動生成ツールで使えるように、公開推奨日時も必ず決める。
