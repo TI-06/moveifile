@@ -1,0 +1,18 @@
+{
+  "video_type": "short",
+  "video_mode": "short_vertical",
+  "title": "小さな会社の見積もり依頼、AIで整理できます",
+  "recommended_publish_at": "2026-06-07 18:30",
+  "images_zip": "images.zip",
+  "srt": "voicevox.srt",
+  "description": "description.txt",
+  "fixed_comment": "fixed_comment.txt",
+  "status": "ready",
+  "experiment": {
+    "publish_time_test": "18:30",
+    "narration_voice": "白上虎太郎",
+    "voice_speed": "1.05",
+    "hook_type": "疑問形",
+    "trend_basis": "小規模事業者のAI活用・問い合わせ/見積もり整理"
+  }
+}
