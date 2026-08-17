@@ -1,0 +1,14 @@
+{
+  "video_type": "longform",
+  "video_mode": "long_horizontal",
+  "title": "小さな会社の「依頼・確認待ち」をExcelで一元管理する方法【抜け漏れ防止】",
+  "recommended_publish_at": "2026-09-06 20:00",
+  "images_zip": "images.zip",
+  "srt": "voicevox.srt",
+  "description": "description.txt",
+  "fixed_comment": "fixed_comment.txt",
+  "chapters": "chapters.txt",
+  "status": "image_package_pending",
+  "priority": 1,
+  "memo": "VOICEVOX: 玄野武宏 / speed 1.05 / 25カット / images_manifest.txtから25画像生成後にimages.zip化"
+}
