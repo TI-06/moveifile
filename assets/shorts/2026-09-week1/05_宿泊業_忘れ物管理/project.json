@@ -1,0 +1,13 @@
+{
+  "video_type": "short",
+  "video_mode": "short_vertical",
+  "title": "宿泊業の忘れ物管理、ノートだけで追ってない？",
+  "recommended_publish_at": "2026-09-04 22:30",
+  "images_zip": "images.zip",
+  "srt": "voicevox.srt",
+  "description": "description.txt",
+  "fixed_comment": "fixed_comment.txt",
+  "status": "image_package_pending",
+  "priority": 5,
+  "memo": "VOICEVOX: 白上虎太郎 / speed 1.10 / 断定形 / images_manifest.txtから8画像生成後にimages.zip化"
+}
